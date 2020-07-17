@@ -12,6 +12,7 @@ console.log(thirdAnswer);
 // ASSINMENT -'feetToMile' END HERE.
 
 
+
 // ASSINMENT -'woodForChair' START HERE.
 function woodCalculator(chair, table, bed){
     var woodForChair = chair * 1;
@@ -23,6 +24,32 @@ function woodCalculator(chair, table, bed){
 var totalCubuicForCombo = woodCalculator(1, 3, 5)
 console.log(totalCubuicForCombo);
 // ASSINMENT -'woodForChair' END HERE.
+
+
+
+// ASSINMENT -'brickCalculator' START HERE.
+function brickCalculator(floor){
+    if(floor <= 10){
+        var totalFeetBrick = 1000;
+        var totalFeet = 15;
+        perFloorBrick = totalFeetBrick * totalFeet 
+    }
+    else if(floor >= 11 && floor <= 20){
+        var totalFeetBrick = 1000;
+        var totalFeet = 12;
+        perFloorBrick = totalFeetBrick * totalFeet;
+    }
+    else{
+        var totalFeetBrick = 1000;
+        var totalFeet = 10;
+        perFloorBrick = totalFeetBrick * totalFeet
+    }
+    return perFloorBrick;
+}
+var brick = brickCalculator(40);
+console.log(brick);
+// ASSINMENT -'brickCalulator' END HERE.
+
 
 
 // ASSINMENT -'tinyFriend' START HERE.
