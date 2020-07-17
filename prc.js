@@ -1,3 +1,4 @@
+  
 // ASSINMENT -'feetToMile' START HERE.
 function feetToMile(feet){
     var mile = feet / 5280;
@@ -28,22 +29,26 @@ console.log(totalCubuicForCombo);
 
 
 // ASSINMENT -'brickCalculator' START HERE.
-function brickCalculator(tala) {
-    if (tala <= 10) {
-        var Eit = (tala * 15 * 1000);
-        return Eit;
+function brickCalculator(floor){
+    if(floor <= 10){
+        var totalFeetBrick = 1000;
+        var totalFeet = 15;
+        perFloorBrick = totalFeetBrick * totalFeet 
     }
-    else if (tala > 10 && tala < 20) {
-        var Eit = (10 * 15 * 1000) + (tala - 10) * 12 * 1000;
-    return Eit;
-}
-    else if (tala => 20) {
-    var Eit = (10 * 15 * 1000) + (10 * 12 * 1000) + (tala - 20) * 10 * 1000;
-return Eit;
+    else if(floor >= 11 && floor <= 20){
+        var totalFeetBrick = 1000;
+        var totalFeet = 12;
+        perFloorBrick = totalFeetBrick * totalFeet;
     }
+    else{
+        var totalFeetBrick = 1000;
+        var totalFeet = 10;
+        perFloorBrick = totalFeetBrick * totalFeet
+    }
+    return perFloorBrick;
 }
-var result = brickCalculator(30)
-console.log(result);
+var brick = brickCalculator(40);
+console.log(brick);
 // ASSINMENT -'brickCalulator' END HERE.
 
 
