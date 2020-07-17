@@ -53,17 +53,16 @@ console.log(brick);
 
 
 // ASSINMENT -'tinyFriend' START HERE.
-function tinyFriend(friend){
-    var smallName = friend[0];
-    for(var i = 0; i < friends.lenght; i++){
-        var element = friends[i];
-        if(element < smallName){
+function tinyFriend(name){
+    var smallName = name[0];
+    for(var i = 0; i < name.length; i++){
+        var element = name[i];
+        if(element.length < smallName.length){
             smallName = element;
         }
     }
     return smallName;
-};
-var friends = ["pial", "rahim", "biplob", "akash", "rakibul", "abdullah"];
-var results = tinyFriend(friends);
-console.log(results);
-// ASSINMENT -'tinyFriend' END HERE.
+}
+var result = tinyFriend(['rahim', 'biplob', 'pial', 'akash', 'rakibul', 'abdullah']);
+console.log(result);
+// ASSINMENT -'tinyFriend' END HERE.867
